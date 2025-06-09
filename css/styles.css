@@ -81,6 +81,8 @@ img {
 }
 section {
     padding: 120px 0;
+    max-width: 1440px;
+    margin: auto;
 }
 .list-style-none {
     list-style: none;
@@ -101,6 +103,7 @@ section {
 /*header*/
 .head{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
     .head .navbar-cont{
         display: flex;
@@ -134,6 +137,7 @@ section {
                     padding: 24px 0;
                     display: inline-block;
                     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
                 }
                 .head .navbar .active{
                     color: #404bbf;
@@ -204,16 +208,22 @@ section {
             margin-top: 48px;
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
             min-width: 169px;
-            transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         .hero-button:hover, .hero-button:focus{
-            background: #404bbf;
+            background-color: #404bbf;
         }
 
 /*services-section*/
 .services-section{
     background-color: #ffffff;
 }
+    .services-section .services-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+    }
     .services-section .services-list{
         display: flex;
         flex-wrap: wrap;
@@ -277,12 +287,14 @@ section {
                             height: 40px;
                             align-items: center;
                             justify-content: center;
+                            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                         }
+                            .team-section .team-member-card .card-text-cont .icon-list .icon-link:hover, .team-section .team-member-card .card-text-cont .icon-list .icon-link:focus{
+                                background-color: #404bbf;
+                            }
                             .team-section .team-member-card .card-text-cont .icon-list .icon-link .team-card-icon{
                                 fill: #f4f4fd;
                             }
-                    
-                
 
 /*portfolio-section*/
 .portfolio-section{
@@ -336,6 +348,7 @@ section {
 }
     .footer .container{
         display: flex;
+        align-items: baseline
     }
         .footer .container .text-cont{
             margin-right: 120px;
@@ -355,7 +368,7 @@ section {
             }
         .footer .container .social-cont .social-text{
             margin-bottom: 16px;
-            color: #f4f4fd;
+            color: #ffffff;
         }
             .footer .container .social-cont .social-list {
                 display: flex;
@@ -372,7 +385,7 @@ section {
                     justify-content: center;
                     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
                 }
-                .footer .container .social-cont .social-list .social-link:hover {
+                .footer .container .social-cont .social-list .social-link:hover, .footer .container .social-cont .social-list .social-link:focus {
                     background-color: #31D0AA;
                 }
                     .footer .container .social-cont .social-list .social-link .footer-icon {
